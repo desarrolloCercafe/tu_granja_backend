@@ -1,0 +1,38 @@
+<table>
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>consecutivo</th>
+            <th>fecha_creacion</th>
+            <th>fecha_estimada</th>
+            <th>granja_id</th>
+            <th>user_id</th>
+            <th>estado_id</th>
+            <th>fecha_entrega</th>
+            <th>hora_entrega</th>
+            <th>conductor_asignado</th>
+            <th>vehiculo_asignado</th>
+            <th>created_at</th>
+            <th>updated_at</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach ($registros as $item)
+            <tr>
+                <td>{{$item->id}}</td>
+                <td>{{$item->consecutivo}}</td>
+                <td>{{$item->fecha_creacion}}</td>
+                <td>{{$item->fecha_estimada}}</td>
+                <td>{{$item->granja_id}}</td>
+                <td>{{$item->user_id}}</td>
+                <td>{{$item->estado_id}}</td>
+                <td>{{$item->fecha_entrega}}</td>
+                <td>{{$item->hora_entrega}}</td>
+                <td>{{$item->conductor_asignado}}</td>
+                <td>{{$item->vehiculo_asignado}}</td>
+                <td>{{$item->created_at}}</td>
+                <td>{{$item->updated_at}}</td>
+            </tr>
+        @endforeach
+    </tbody>
+</table>
